@@ -38,7 +38,19 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
 }
 .nav-brand { display: flex; align-items: center; gap: 14px; }
-.nav-logo { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--white); }
+.nav-logo { 
+  font-family: 'Playfair Display', serif; 
+  font-size: 18px; 
+  font-weight: 700; 
+  color: var(--white); 
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+  .nav-logo:hover {
+  opacity: 0.92;
+}
+  
 .nav-logo span { color: var(--orange); }
 .nav-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.15); }
 .nav-label { font-size: 12px; color: rgba(255,255,255,0.35); }
@@ -182,11 +194,11 @@ footer { background: var(--dark); padding: 40px 64px; display: flex; align-items
 <body>
 
 <nav>
-  <div class="nav-brand">
-    <div class="nav-logo">AMBi<span>PLUS</span></div>
-    <div class="nav-sep"></div>
-    <div class="nav-label">Soluções DIMEP</div>
-  </div>
+<div class="nav-brand">
+  <a href="https://www.ambiplus.com.br/" class="nav-logo" target="_blank" rel="noopener noreferrer">AMBi<span>PLUS</span></a>
+  <div class="nav-sep"></div>
+  <div class="nav-label">Soluções DIMEP</div>
+</div>
   <a href="#contato" class="nav-cta">Conversar com especialista</a>
 </nav>
 
